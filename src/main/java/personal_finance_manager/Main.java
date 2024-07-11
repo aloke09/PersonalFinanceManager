@@ -6,7 +6,7 @@ import java.util.*;
 
 public class Main
 {
-    public static void main(String[] args) throws CustomeException, IOException {
+    public static void main(String[] args) throws CustomeException, IOException, ClassNotFoundException {
 
         Scanner sc=new Scanner(System.in);
         Methods m=new Methods();
@@ -82,7 +82,7 @@ public class Main
                 case 9:
                     System.out.println("Enter file location to retrieve transactions-");
                     String fileloc10=sc.next();
-                    m.saveTransactionsToFile(fileloc10);
+                    m.loadTransactionsFromFile(fileloc10);
                     break;
                 case 10:
                     System.out.println("EXIT!!");
